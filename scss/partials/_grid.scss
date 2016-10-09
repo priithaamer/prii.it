@@ -1,0 +1,47 @@
+$max-width: 940px;
+
+@include media(min-width $large-breakpoint) {
+  .container {
+    @include outer-container;
+  }
+  
+  .row {
+    @include row();
+  }
+  
+  .col-1 {
+    @include span-columns(1);
+    
+    min-height: 1px;
+  }
+  
+  .col-2 {
+    @include span-columns(2);
+    
+    min-height: 1px;
+  }
+  
+  .col-5 {
+    @include span-columns(5);
+    
+    min-height: 1px;
+  }
+  
+  .col-6 {
+    @include span-columns(6);
+    
+    min-height: 1px;
+  }
+  
+  .col-8 {
+    @include span-columns(8);
+    
+    min-height: 1px;
+  }
+  
+  .col-12 {
+    @include span-columns(12);
+    
+    min-height: 1px;
+  }
+}

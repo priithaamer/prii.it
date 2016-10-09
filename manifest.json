@@ -1,0 +1,54 @@
+{
+  "layouts": [
+    {
+      "title": "SiteHeader",
+      "layout_name": "siteheader",
+      "content_type": "component",
+      "component": true,
+      "file": "components/siteheader.tpl"
+    },
+    {
+      "title": "Footer",
+      "layout_name": "footer",
+      "content_type": "component",
+      "component": true,
+      "file": "components/footer.tpl"
+    },
+    {
+      "title": "Front page",
+      "layout_name": "front_page",
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/front_page.tpl"
+    },
+    {
+      "title": "Common page",
+      "layout_name": "common_page",
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/common_page.tpl"
+    },
+    {
+      "title": "Blog & News",
+      "layout_name": "blog___news",
+      "content_type": "blog",
+      "component": false,
+      "file": "layouts/blog___news.tpl"
+    },
+    {
+      "title": "Blog Article",
+      "layout_name": "blog_article",
+      "content_type": "blog_article",
+      "component": false,
+      "file": "layouts/blog_article.tpl"
+    }
+  ],
+  "assets": [
+    {
+      "kind": "stylesheet",
+      "filename": "style.css",
+      "file": "stylesheets/style.css",
+      "content_type": "text/css"
+    }
+  ]
+}

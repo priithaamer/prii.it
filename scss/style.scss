@@ -1,0 +1,131 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+@import 'partials/variables';
+@import 'partials/fonts';
+@import 'partials/grid';
+
+// Prevent font scaling in landscape while allowing user zoom
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  padding: 0 20px;
+}
+
+@include media(min-width $large-breakpoint) {
+  body {
+    padding: 0 40px;
+  }
+}
+
+body {
+  font-family: 'Lato', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+h1,
+h2 {
+  color: #444;
+}
+
+h1 {
+  color: $color-blue;
+  font-weight: 100;
+  letter-spacing: -2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+}
+
+.header {
+  h1 {
+    font-size: 48px;
+    line-height: 1em;
+  }
+}
+
+.front {
+  @include media(min-width $large-breakpoint) {
+    .header {
+      padding: 40px 0;
+      
+      h1 {
+        font-size: 72px;
+        line-height: 1em;
+      }
+    }
+  }
+  
+  .article {
+    margin-bottom: 18px;
+    
+    .date {
+      text-align: left;
+    }
+  }
+}
+
+.blog {
+  .article {
+    margin-bottom: 58px;
+  }
+}
+
+.article {
+  h2 {
+    text-align: center;
+  }
+  
+  .date {
+    color: #999;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .tags {
+    color: #999;
+    font-size: 11px;
+    margin-top: 10px;
+  }
+}
+
+.footer-contacts {
+  color: #999;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+code,
+pre {
+  color: #000;
+  font-family: Inconsolata, Menlo, Monaco, monospace;
+  font-size: 14px;
+}
+
+pre {
+  line-height: 18px;
+  padding: 10px 20px;
+}
